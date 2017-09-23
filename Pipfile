@@ -4,13 +4,12 @@ verify_ssl = true
 
 [packages]
 flask= '*'
-urllib ='*'
 simplejson = '*'
 pandas = '*'
 numpy = '*'
 pymysql = '*'
 
 [requires]
-python_version = "3.6.2"
+python_version = "3.6"
 
 
