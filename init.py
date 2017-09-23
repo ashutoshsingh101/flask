@@ -19,6 +19,7 @@ def post():
     result_dict = medical_calculation.for_calculator_operations()
     keys_of_result_dict = result_dict.keys()
     if 'sorry' not in keys_of_result_dict:
+        print('yes')
       input_variable_dict = input_variable_dict.update(result_dict)
       database.connect_to_database(type_of_calculator,input_variable_dict)
     return jsonify(result_dict)
