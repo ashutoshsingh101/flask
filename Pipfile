@@ -9,6 +9,7 @@ simplejson = '*'
 pandas = '*'
 numpy = '*'
 pymysql = '*'
+pymongo = '*'
 
 [requires]
 python_version = "3.6"
