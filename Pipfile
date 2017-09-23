@@ -4,6 +4,8 @@ verify_ssl = true
 
 [packages]
 flask= '*'
+urllib.parse = '*'
+urllib.request = '*'
 simplejson = '*'
 pandas = '*'
 numpy = '*'
