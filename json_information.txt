@@ -1,0 +1,13 @@
+"age":"45","height":"175","currentBodyWeight":"75","targetBodyWeight":"68","dailyCalorieIntake":"","Gender":"male","PhysicalActivityLevel":"Sedentary"
+"numberOf drinks":"2","time":"45","bodyWeight":"55","Gender":"male"
+
+
+"weight":"76","Gender":"male","speed":"6","distance":"5","inclination":"4","age":"34","height":"167","restingHeartRate":"69"
+
+
+"weight":"73","height":"170"
+
+
+"SmokingStatus":"yes","DiabetesStatus":"yes","Gender":"male","age":"45", "LDLcholesterol":"132", "HDLcholesterol":"56", "systolicBloodPressure":"120","diastolicBloodBressure":"80"
+
+
