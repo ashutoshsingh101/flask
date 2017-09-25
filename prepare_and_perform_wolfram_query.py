@@ -133,10 +133,10 @@ class prepare_and_perform_query_with_assumptions:
         return False
 
     def add_subjective_variables_for_heart_risk(self,query_str,variable_list_subjective):
-        names_of_variables_needed_in_calculator = ['age', 'LDLcholesterol', 'HDLcholesterol', 'systolicBloodPressure','diastolicBloodBressure']
+        names_of_variables_needed_in_calculator = ['age', 'ldlCholesterol', 'hdlCholesterol', 'systolicBloodPressure','diastolicBloodBressure']
         count = 0
         for variable_number in range(len(variable_list_subjective)):
-            user_input = self.variable_input_dict[''+str(names_of_variables_needed_in_calculator[variable_number]).lower()+'']
+            user_input = self.variable_input_dict[''+str(names_of_variables_needed_in_calculator[variable_number])+'']
             if names_of_variables_needed_in_calculator[variable_number] == 'dailyCalorieIntake':
                 if user_input == '':
                     count = count+1
