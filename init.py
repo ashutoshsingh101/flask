@@ -13,7 +13,7 @@ def home():
 def post():
     database = mongo_for_wolfram.mongo_db_database()
     input_json = request.get_json()
-    type_of_calculator = input_json['type']
+    type_of_calculator = input_json['typeOfCalculator']
     input_variable_dict = input_json['variables']
     medical_calculation = wolfram_calculator.wolfram_calculators(type_of_calculator,input_variable_dict)
     result_dict = medical_calculation.for_calculator_operations()

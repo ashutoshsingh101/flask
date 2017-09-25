@@ -178,7 +178,7 @@ class extract_blood_alcohol_content_data:
 
     def extract_data_out_of_pod_estimated_result(self,pod_item):
         found = False
-        estimated_result_table_dict = {'leagalDirivingLimitInIndia' : '.03%'}
+        estimated_result_table_dict = {'legalDirivingLimitInIndia' : '.03%'}
         for inner_pod_list in pod_item:
             if type(inner_pod_list) is list and inner_pod_list[0] == 'subpod':
                 for subpod_item in inner_pod_list:
@@ -191,7 +191,7 @@ class extract_blood_alcohol_content_data:
                                 if (columns[0].encode('utf-8')).strip() == 'blood alcohol percentage' :
                                     estimated_result_table_dict.update({''+self.convert_to_camel_case(columns[0])+'':''+(columns[1]).strip()+''})
                                 if 'total time to' in (columns[0]).strip():
-                                    estimated_result_table_dict.update({''+self.convert_to_camel_case(columns[0]).replace('0.08%','LeagalLimit')+'':''+(columns[1]).strip()+''})
+                                    estimated_result_table_dict.update({''+self.convert_to_camel_case(columns[0]).replace('0.08%','LegalLimit')+'':''+(columns[1]).strip()+''})
         if found is True:
             return estimated_result_table_dict
         return found
