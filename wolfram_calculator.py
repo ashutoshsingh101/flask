@@ -62,7 +62,7 @@ class wolfram_calculators:
             
         if  int(self.type_of_calculator) == 3:
             input_string = 'running'
-             json_result = self.think_its_name(server,appid,input_string, medical_test_wolfram_query_flag)
+            json_result = self.think_its_name(server,appid,input_string, medical_test_wolfram_query_flag)
             
         if int(self.type_of_calculator) == 4:
             input_string = 'BMI'
