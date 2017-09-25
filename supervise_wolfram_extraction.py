@@ -188,7 +188,7 @@ class extract_blood_alcohol_content_data:
                             columns = row.split('|')
                             if len(columns) >= 2 :
                                 found = True
-                                if (columns[0].encode('utf-8')).strip() == 'blood alcohol percentage' :
+                                if (columns[0]).strip() == 'blood alcohol percentage' :
                                     estimated_result_table_dict.update({''+self.convert_to_camel_case(columns[0])+'':''+(columns[1]).strip()+''})
                                 if 'total time to' in (columns[0]).strip():
                                     estimated_result_table_dict.update({''+self.convert_to_camel_case(columns[0]).replace('0.08%','LegalLimit')+'':''+(columns[1]).strip()+''})
